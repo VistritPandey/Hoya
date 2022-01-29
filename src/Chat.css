@@ -27,7 +27,7 @@
 
 .chat__body{
     flex: 1;
-    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-BspTeniIo95qzl_sP6QJouYUo_IwiBx4cg&usqp=CAU");
     background-repeat: repeat;
     background-position: center;
     padding: 30px;
@@ -40,7 +40,7 @@
     padding: 10px;
     width: fit-content;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #dcf8c6;
     margin-bottom: 30px;
 }
 
