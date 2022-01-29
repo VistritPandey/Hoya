@@ -1,8 +1,7 @@
 import { Avatar, IconButton } from "@material-ui/core";
-import VoiceChatIcon from "@material-ui/icons/VoiceChat";
 import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
-import { SearchOutlined } from "@material-ui/icons";
+import { AddOutlined, SearchOutlined } from "@material-ui/icons";
 import SidebarChat from "./SidebarChat";
 import db from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -27,19 +26,26 @@ function Sidebar() {
     }
   }, []);
 
+  const createChat = () => {
+    const roomName = prompt("Please enter name for chat room");
+    if (roomName) {
+      db.collection("rooms").add({
+        name: roomName,
+      });
+    }
+  };
+
   return (
     <div className="sidebar">
       <div className="sidebar__header">
+        <IconButton>
         <Avatar src={user?.photoURL}/>
+        </IconButton>
+        <IconButton>
+            <AddOutlined onClick={createChat}/>
+          </IconButton>
     </div>
-      <div className="sidebar__search">
-        <div className="sidebar__searchContainer">
-          <SearchOutlined />
-          <input placeholder="Search or start new chat" type="text" />
-        </div>
-      </div>
       <div className="sidebar__chats">
-        <SidebarChat addNewChat />
         {rooms.map((room) => (
           <SidebarChat key={room.id} id={room.id} name={room.data.name} />
         ))}

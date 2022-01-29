@@ -21,20 +21,8 @@ function SidebarChat({ addNewChat, id, name }) {
     console.log(messages);
   }, [id]);
 
-  useEffect(() => {
-    setSeed(Math.floor(Math.random() * 5000));
-  }, []);
 
-  const createChat = () => {
-    const roomName = prompt("Please enter name for chat room");
-    if (roomName) {
-      db.collection("rooms").add({
-        name: roomName,
-      });
-    }
-  };
-
-  return !addNewChat ? (
+  return (
     <Link to={`/rooms/${id}`}>
       <div className="sidebarChat">
         <Avatar src={`https://avatars.dicebear.com/api/human/${id}.svg`} />
@@ -44,11 +32,7 @@ function SidebarChat({ addNewChat, id, name }) {
         </div>
       </div>
     </Link>
-  ) : (
-    <div className="sidebarChat" onClick={createChat}>
-      <h2>Add new Chat</h2>
-    </div>
-  );
+  )
 }
 
 export default SidebarChat;
