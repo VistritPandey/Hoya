@@ -1,5 +1,8 @@
 .login {
-    background-color: #f8f8f8;
+    flex: 1;
+    background-image: url("https://images4.alphacoders.com/936/thumb-1920-936378.jpg");
+    background-repeat: repeat;
+    background-position: center;
     height: 100vh;
     width: 100vw;
     display: grid;
