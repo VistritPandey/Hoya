@@ -1,11 +1,10 @@
 import { Avatar, IconButton } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
-import { AddOutlined, SearchOutlined } from "@material-ui/icons";
+import { AddOutlined} from "@material-ui/icons";
 import SidebarChat from "./SidebarChat";
 import db from "./firebase";
 import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
 
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
@@ -39,7 +38,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar__header">
         <IconButton>
-        <Avatar onClick={auth.signOut()} src={user?.photoURL}/>
+        <Avatar src={user?.photoURL}/>
         </IconButton>
         <IconButton>
             <AddOutlined onClick={createChat}/>
