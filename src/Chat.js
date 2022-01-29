@@ -7,6 +7,7 @@ import {
   Mic,
   MoreVert,
   SearchOutlined,
+  SendOutlined,
 } from "@material-ui/icons";
 import { useParams } from "react-router-dom";
 import db from "./firebase";
@@ -99,10 +100,10 @@ function Chat() {
             onChange={(e) => setInput(e.target.value)}
           />
           <button type="submit" onClick={sendMessage}>
-            Type a message
+          Type a message
           </button>
         </form>
-        <Mic />
+        <SendOutlined type="submit" onClick={sendMessage}/>
       </div>
     </div>
   );
