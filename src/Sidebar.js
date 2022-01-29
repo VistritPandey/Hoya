@@ -26,7 +26,7 @@ function Sidebar() {
   }, []);
 
   const createChat = () => {
-    const roomName = prompt("Please enter name for chat room");
+    const roomName = prompt("Please enter name for your space room");
     if (roomName) {
       db.collection("rooms").add({
         name: roomName,
