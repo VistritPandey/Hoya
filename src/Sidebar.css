@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border-right: 1px solid white;
+    border-right: 2px solid white;
 }
 
 .sidebar__headerRight {
@@ -46,7 +46,7 @@
 }
 
 .sidebar__searchContainer >input {
-    border: none;
+    border: 1px;
     outline-width: 0;
     margin-left: 10px;
 }
