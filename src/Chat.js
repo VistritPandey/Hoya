@@ -37,7 +37,6 @@ function Chat() {
           setMessages(snapshot.docs.map((doc) => doc.data()))
         );
     }
-    // console.log(messages);
     return () => {};
   }, [roomId]);
 
@@ -70,12 +69,6 @@ function Chat() {
           </p>
         </div>
         <div className="chat__headerRight">
-          <IconButton>
-            <SearchOutlined />
-          </IconButton>
-          <IconButton>
-            <AttachFile />
-          </IconButton>
           <IconButton>
             <MoreVert />
           </IconButton>
