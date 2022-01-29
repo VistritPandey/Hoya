@@ -6,6 +6,7 @@ import { SearchOutlined } from "@material-ui/icons";
 import SidebarChat from "./SidebarChat";
 import db from "./firebase";
 import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
 
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
@@ -30,13 +31,6 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar__header">
         <Avatar src={user?.photoURL}/>
-        <div className="sidebar__headerRight">
-          <IconButton>
-            <a href="https://aqueous-plains-97236.herokuapp.com/" target="_blank">
-              <VoiceChatIcon/>          
-            </a>
-          </IconButton>
-      </div>
     </div>
       <div className="sidebar__search">
         <div className="sidebar__searchContainer">
