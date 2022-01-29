@@ -25,12 +25,12 @@ function Login() {
     <div className="login">
       <div className="login__container">
         <div className="login__text">
-          <h1>Spacies</h1>
+          <h1>SPACIES</h1>
         </div>
 
         <Button onClick={signIn}>
           <MailOutlineIcon className="mailIconLogin" />
-          Sign In With Google
+          SIGN IN
         </Button>
       </div>
     </div>
