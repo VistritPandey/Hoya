@@ -27,11 +27,12 @@
 
 .chat__body{
     flex: 1;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-BspTeniIo95qzl_sP6QJouYUo_IwiBx4cg&usqp=CAU");
+    background-image: url("https://cdn.shopify.com/s/files/1/2656/8500/products/WALS0379_1000PX.jpg?v=1614265891");
     background-repeat: repeat;
     background-position: center;
     padding: 30px;
     overflow-y: scroll;
+    opacity: 0.8;
 }
 
 .chat__message {
