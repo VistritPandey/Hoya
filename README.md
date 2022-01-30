@@ -1,6 +1,4 @@
-# Deployed at: 
-
-
+# Deployed at: https://spacieschat.web.app
 
 
 ## Available Scripts
