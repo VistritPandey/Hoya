@@ -1,4 +1,5 @@
-# Deployed at: https://spacieschat.web.app
+# Deployed at: https://spacieschat.web.app and  https://spaciesrollingin.space
+for some reason domain.com is not working for either one of us so we have decided to leave it as it is, but we have successfully bought the above domain from domain.com
 
 
 ## Available Scripts
